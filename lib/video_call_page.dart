@@ -253,7 +253,7 @@ class _VideoCallPageState extends State<VideoCallPage> {
         controller: VideoViewController.remote(
           rtcEngine: _engine,
           canvas: VideoCanvas(uid: _remoteUid),
-          connection: RtcConnection(channelId: channel),
+          connection: RtcConnection(channelId: widget.channel),
         ),
       );
     } else {
